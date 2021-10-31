@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.keter{
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.kotak{
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px 5px 0 0;
+  background: crimson;
+  border: 2px solid black;
+}
+.kotak .musuh{
+  width: 100%;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 200px;
+  border-bottom: 4px solid black;
+}
+.kotak .musuh .nama{
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+.kotak .musuh .pilihan{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  font-size: 20px;
+  font-weight: 600;
+  overflow: hidden;
+}
+.kotak .musuh .pilihan img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.kotak .hasil{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: white;
+  border: 4px solid black;
+  font-size: 15px;
+  font-weight: 600;
+}
+.kotak .player{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.kotak .player .pilih{
+  margin: 5px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+  transition: width 0.3s;
+}
+.kotak .player .pilih.terpilih{
+  border-color: red;
+  background: gold;
+  width: 80px;
+  height: 80px;
+}
+
+.kotak button{
+  width: 100%;
+  padding: 20px 0;
+  border-radius: 0 0 5px 5px;
+  border: none;
+  background: lightblue;
+  color: black;
+  font-weight: 600;
+  border: 2px solid black;
+}
+
+.retry .player .pilih{
+  pointer-events: none;
+}
